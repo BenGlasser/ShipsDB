@@ -15,5 +15,12 @@ namespace ShipsDB
         {
             InitializeComponent();
         }
+
+        private void connectToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConnectForm connection = new ConnectForm();
+            connection.Show();
+
+        }
     }
 }

@@ -295,6 +295,11 @@ namespace ShipsDB
         {
             showTable(OUTCOMES_STRING);
         }
+
+        private void connectToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            connectToolStripMenuItem_Click(sender, e);
+        }
     }
     /// <summary>
     /// Configuration file for the PostgreSQL database connection 

@@ -31,6 +31,7 @@
             this.tabPanel = new System.Windows.Forms.TabControl();
             this.classTab = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.showClassesButton = new System.Windows.Forms.Button();
             this.displacementSearchButton = new System.Windows.Forms.Button();
             this.boreSearchButton = new System.Windows.Forms.Button();
             this.classOutLabel = new System.Windows.Forms.Label();
@@ -71,6 +72,7 @@
             this.boreField2 = new System.Windows.Forms.TextBox();
             this.shipTab = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.showShipsButton = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.insertShipsButton = new System.Windows.Forms.Button();
@@ -94,6 +96,7 @@
             this.shipsClassBox1 = new System.Windows.Forms.TextBox();
             this.battleTab = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.showBattlesButton = new System.Windows.Forms.Button();
             this.searchBattleDatebutton = new System.Windows.Forms.Button();
             this.searchBattlesNameButton = new System.Windows.Forms.Button();
             this.insertBattlesButton = new System.Windows.Forms.Button();
@@ -109,6 +112,7 @@
             this.searchBattlesDateBox = new System.Windows.Forms.TextBox();
             this.outcomeTab = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.showOutcomesButton = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.insertOutcomesButton = new System.Windows.Forms.Button();
@@ -131,12 +135,7 @@
             this.classesDataGrid = new System.Windows.Forms.DataGridView();
             this.classOutBox = new System.Windows.Forms.RichTextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.connectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.showClassesButton = new System.Windows.Forms.Button();
-            this.showShipsButton = new System.Windows.Forms.Button();
-            this.showBattlesButton = new System.Windows.Forms.Button();
-            this.showOutcomesButton = new System.Windows.Forms.Button();
+            this.connectToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPanel.SuspendLayout();
             this.classTab.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -219,6 +218,16 @@
             this.groupBox1.Size = new System.Drawing.Size(427, 273);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
+            // 
+            // showClassesButton
+            // 
+            this.showClassesButton.Location = new System.Drawing.Point(146, 244);
+            this.showClassesButton.Name = "showClassesButton";
+            this.showClassesButton.Size = new System.Drawing.Size(131, 23);
+            this.showClassesButton.TabIndex = 37;
+            this.showClassesButton.Text = "Show";
+            this.showClassesButton.UseVisualStyleBackColor = true;
+            this.showClassesButton.Click += new System.EventHandler(this.showClassesButton_Click);
             // 
             // displacementSearchButton
             // 
@@ -573,6 +582,16 @@
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             // 
+            // showShipsButton
+            // 
+            this.showShipsButton.Location = new System.Drawing.Point(146, 245);
+            this.showShipsButton.Name = "showShipsButton";
+            this.showShipsButton.Size = new System.Drawing.Size(131, 23);
+            this.showShipsButton.TabIndex = 41;
+            this.showShipsButton.Text = "Show";
+            this.showShipsButton.UseVisualStyleBackColor = true;
+            this.showShipsButton.Click += new System.EventHandler(this.showShipsButton_Click);
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -780,6 +799,16 @@
             this.groupBox3.TabIndex = 13;
             this.groupBox3.TabStop = false;
             // 
+            // showBattlesButton
+            // 
+            this.showBattlesButton.Location = new System.Drawing.Point(146, 245);
+            this.showBattlesButton.Name = "showBattlesButton";
+            this.showBattlesButton.Size = new System.Drawing.Size(131, 23);
+            this.showBattlesButton.TabIndex = 38;
+            this.showBattlesButton.Text = "Show";
+            this.showBattlesButton.UseVisualStyleBackColor = true;
+            this.showBattlesButton.Click += new System.EventHandler(this.showBattlesButton_Click);
+            // 
             // searchBattleDatebutton
             // 
             this.searchBattleDatebutton.Location = new System.Drawing.Point(213, 209);
@@ -925,6 +954,16 @@
             this.groupBox4.Size = new System.Drawing.Size(427, 277);
             this.groupBox4.TabIndex = 13;
             this.groupBox4.TabStop = false;
+            // 
+            // showOutcomesButton
+            // 
+            this.showOutcomesButton.Location = new System.Drawing.Point(146, 245);
+            this.showOutcomesButton.Name = "showOutcomesButton";
+            this.showOutcomesButton.Size = new System.Drawing.Size(131, 23);
+            this.showOutcomesButton.TabIndex = 60;
+            this.showOutcomesButton.Text = "Show";
+            this.showOutcomesButton.UseVisualStyleBackColor = true;
+            this.showOutcomesButton.Click += new System.EventHandler(this.showOutcomesButton_Click);
             // 
             // label15
             // 
@@ -1102,79 +1141,32 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.connectToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(885, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(465, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // fileToolStripMenuItem
+            // connectToolStripMenuItem1
             // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.connectToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
-            // 
-            // connectToolStripMenuItem
-            // 
-            this.connectToolStripMenuItem.Name = "connectToolStripMenuItem";
-            this.connectToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
-            this.connectToolStripMenuItem.Text = "Connect";
-            this.connectToolStripMenuItem.Click += new System.EventHandler(this.connectToolStripMenuItem_Click);
-            // 
-            // showClassesButton
-            // 
-            this.showClassesButton.Location = new System.Drawing.Point(146, 244);
-            this.showClassesButton.Name = "showClassesButton";
-            this.showClassesButton.Size = new System.Drawing.Size(131, 23);
-            this.showClassesButton.TabIndex = 37;
-            this.showClassesButton.Text = "Show";
-            this.showClassesButton.UseVisualStyleBackColor = true;
-            this.showClassesButton.Click += new System.EventHandler(this.showClassesButton_Click);
-            // 
-            // showShipsButton
-            // 
-            this.showShipsButton.Location = new System.Drawing.Point(146, 245);
-            this.showShipsButton.Name = "showShipsButton";
-            this.showShipsButton.Size = new System.Drawing.Size(131, 23);
-            this.showShipsButton.TabIndex = 41;
-            this.showShipsButton.Text = "Show";
-            this.showShipsButton.UseVisualStyleBackColor = true;
-            this.showShipsButton.Click += new System.EventHandler(this.showShipsButton_Click);
-            // 
-            // showBattlesButton
-            // 
-            this.showBattlesButton.Location = new System.Drawing.Point(146, 245);
-            this.showBattlesButton.Name = "showBattlesButton";
-            this.showBattlesButton.Size = new System.Drawing.Size(131, 23);
-            this.showBattlesButton.TabIndex = 38;
-            this.showBattlesButton.Text = "Show";
-            this.showBattlesButton.UseVisualStyleBackColor = true;
-            this.showBattlesButton.Click += new System.EventHandler(this.showBattlesButton_Click);
-            // 
-            // showOutcomesButton
-            // 
-            this.showOutcomesButton.Location = new System.Drawing.Point(146, 245);
-            this.showOutcomesButton.Name = "showOutcomesButton";
-            this.showOutcomesButton.Size = new System.Drawing.Size(131, 23);
-            this.showOutcomesButton.TabIndex = 60;
-            this.showOutcomesButton.Text = "Show";
-            this.showOutcomesButton.UseVisualStyleBackColor = true;
-            this.showOutcomesButton.Click += new System.EventHandler(this.showOutcomesButton_Click);
+            this.connectToolStripMenuItem1.Name = "connectToolStripMenuItem1";
+            this.connectToolStripMenuItem1.Size = new System.Drawing.Size(64, 20);
+            this.connectToolStripMenuItem1.Text = "Connect";
+            this.connectToolStripMenuItem1.Click += new System.EventHandler(this.connectToolStripMenuItem1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(885, 548);
+            this.ClientSize = new System.Drawing.Size(465, 548);
             this.Controls.Add(this.classOutBox);
             this.Controls.Add(this.classesDataGrid);
             this.Controls.Add(this.tabPanel);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
+            this.ShowIcon = false;
             this.Text = "Form1";
             this.tabPanel.ResumeLayout(false);
             this.classTab.ResumeLayout(false);
@@ -1203,8 +1195,6 @@
         private System.Windows.Forms.TabPage shipTab;
         private System.Windows.Forms.TabPage classTab;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem connectToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button insertClassesButton;
         private System.Windows.Forms.Label displacementLabel;
@@ -1308,6 +1298,7 @@
         private System.Windows.Forms.Button showShipsButton;
         private System.Windows.Forms.Button showBattlesButton;
         private System.Windows.Forms.Button showOutcomesButton;
+        private System.Windows.Forms.ToolStripMenuItem connectToolStripMenuItem1;
     }
 }
 

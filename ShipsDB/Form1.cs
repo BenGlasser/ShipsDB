@@ -23,6 +23,21 @@ namespace ShipsDB
         private const String BATTLES_STRING = "battles";
         private const String OUTCOMES_STRING = "outcomes";
 
+        String user;
+
+        public String User
+        {
+            get { return user; }
+            set { user = value; }
+        }
+        String password;
+
+        public String Password
+        {
+            get { return password; }
+            set { password = value; }
+        }
+
         public Form1()
         {
             
@@ -31,7 +46,8 @@ namespace ShipsDB
 
         private void connectToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ConnectForm connection = new ConnectForm();
+            this.Enabled = false;
+            ConnectForm connection = new ConnectForm(this);
             connection.Show();
 
         }
@@ -57,7 +73,7 @@ namespace ShipsDB
             }
             NpgsqlCommand command = new NpgsqlCommand(queryString);
 
-            using (NpgsqlConnection connection = Config.GetConn("class7", "brg2851"))
+            using (NpgsqlConnection connection = Config.GetConn(user, password))
             {
                 try
                 {
@@ -87,7 +103,7 @@ namespace ShipsDB
 
             NpgsqlCommand command = new NpgsqlCommand(queryString);
 
-            using (NpgsqlConnection connection = Config.GetConn("class7", "brg2851"))
+            using (NpgsqlConnection connection = Config.GetConn(user, password))
             {
                 try
                 {
@@ -116,7 +132,7 @@ namespace ShipsDB
             String queryString = "SELECT * FROM " + table;
             NpgsqlCommand command = new NpgsqlCommand(queryString);
 
-            using (NpgsqlConnection connection = Config.GetConn("class7", "brg2851"))
+            using (NpgsqlConnection connection = Config.GetConn(user, password))
             {
                 try
                 {
@@ -290,9 +306,9 @@ namespace ShipsDB
         // Port of Postgre server that we need to connect to
         public static string Port = "5432";
         // User of Postgre database that we need to connect
-        public static string UserId = "class7";
+        public static string UserId = "";
         // Password for the Postgre user
-        public static string Password = "brg2851";
+        public static string Password = "";
         // Database of the Postgre that contains the neccessary tables for this application 
         public static string Database = "class7db";
 

@@ -1,0 +1,17 @@
+H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\bin\Debug\ShipsDB.exe
+H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\bin\Debug\ShipsDB.pdb
+H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\obj\x86\Debug\ShipsDB.Form1.resources
+H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\obj\x86\Debug\ShipsDB.Properties.Resources.resources
+H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\obj\x86\Debug\ShipsDB.csproj.GenerateResource.Cache
+H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\obj\x86\Debug\ShipsDB.exe
+H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\obj\x86\Debug\ShipsDB.pdb
+H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\obj\x86\Debug\ShipsDB.ConnectForm.resources
+H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\bin\Debug\Mono.Security.dll
+H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\bin\Debug\Npgsql.dll
+H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\bin\Debug\Npgsql.xml
+H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\bin\Debug\de\Npgsql.resources.dll
+H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\bin\Debug\es\Npgsql.resources.dll
+H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\bin\Debug\fi\Npgsql.resources.dll
+H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\bin\Debug\fr\Npgsql.resources.dll
+H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\bin\Debug\ja\Npgsql.resources.dll
+H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\bin\Debug\zh-CN\Npgsql.resources.dll

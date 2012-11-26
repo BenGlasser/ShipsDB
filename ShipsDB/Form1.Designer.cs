@@ -1124,17 +1124,20 @@
             // 
             // classesDataGrid
             // 
+            this.classesDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.classesDataGrid.BackgroundColor = System.Drawing.SystemColors.Window;
             this.classesDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.classesDataGrid.Location = new System.Drawing.Point(9, 345);
+            this.classesDataGrid.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.classesDataGrid.Location = new System.Drawing.Point(464, 48);
             this.classesDataGrid.Name = "classesDataGrid";
-            this.classesDataGrid.Size = new System.Drawing.Size(445, 191);
+            this.classesDataGrid.Size = new System.Drawing.Size(670, 289);
             this.classesDataGrid.TabIndex = 37;
             // 
             // classOutBox
             // 
-            this.classOutBox.Location = new System.Drawing.Point(467, 49);
+            this.classOutBox.Location = new System.Drawing.Point(17, 385);
             this.classOutBox.Name = "classOutBox";
-            this.classOutBox.Size = new System.Drawing.Size(412, 483);
+            this.classOutBox.Size = new System.Drawing.Size(441, 172);
             this.classOutBox.TabIndex = 13;
             this.classOutBox.Text = "";
             // 
@@ -1144,7 +1147,7 @@
             this.connectToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(465, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1154, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -1159,7 +1162,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(465, 548);
+            this.ClientSize = new System.Drawing.Size(1154, 356);
             this.Controls.Add(this.classOutBox);
             this.Controls.Add(this.classesDataGrid);
             this.Controls.Add(this.tabPanel);

@@ -2,8 +2,8 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ReferencePath>H:\Npgsql2.0.12\Mono2.0\bin\</ReferencePath>
-    <PublishUrlHistory>ftp://www.benglasser.com/public_html/dev/|ftp://www.benglasser.com/public_html/apps/|publish\|ftp|ftp\</PublishUrlHistory>
-    <InstallUrlHistory />
+    <PublishUrlHistory>ftp://www.benglasser.com/public_html/dev/|ftp://www.benglasser.com/dev/|ftp://www.benglasser.com/|ftp://www.benglasser.com/public_html/apps/|publish\</PublishUrlHistory>
+    <InstallUrlHistory>http://www.benglasser.com/dev/|http://www.benglasser.com/public_html/dev/|http://www.benglasser.com/</InstallUrlHistory>
     <SupportUrlHistory />
     <UpdateUrlHistory />
     <BootstrapperUrlHistory />

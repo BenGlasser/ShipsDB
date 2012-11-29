@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+ * Ben Glasser
+ * CS386 HW6
+ * 11/29/2012
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

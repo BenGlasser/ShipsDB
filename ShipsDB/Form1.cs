@@ -37,6 +37,7 @@ namespace ShipsDB
             get { return password; }
             set { password = value; }
         }
+        public String host { get; set; }
 
         public Form1()
         {
@@ -73,7 +74,7 @@ namespace ShipsDB
             }
             NpgsqlCommand command = new NpgsqlCommand(queryString);
 
-            using (NpgsqlConnection connection = Config.GetConn(user, password))
+            using (NpgsqlConnection connection = Config.GetConn(user, password, host))
             {
                 try
                 {
@@ -103,7 +104,7 @@ namespace ShipsDB
 
             NpgsqlCommand command = new NpgsqlCommand(queryString);
 
-            using (NpgsqlConnection connection = Config.GetConn(user, password))
+            using (NpgsqlConnection connection = Config.GetConn(user, password, host))
             {
                 try
                 {
@@ -132,7 +133,7 @@ namespace ShipsDB
             String queryString = "SELECT * FROM " + table;
             NpgsqlCommand command = new NpgsqlCommand(queryString);
 
-            using (NpgsqlConnection connection = Config.GetConn(user, password))
+            using (NpgsqlConnection connection = Config.GetConn(user, password, host))
             {
                 try
                 {
@@ -224,18 +225,7 @@ namespace ShipsDB
         {
             search("Classes", "numGuns", numGunsSearchBox.Text);
         }
-
-        private void boreSearchBox_TextChanged(object sender, EventArgs e)
-        {
-            search("Classes", "bore", boreSearchBox.Text);
-
-        }
-
-        private void displacementSearchBox_TextChanged(object sender, EventArgs e)
-        {
-            search("Classes", "displacement", displacementSearchBox.Text);
-        }
-
+        
         private void shipsNameSearchButton_Click(object sender, EventArgs e)
         {
             search(SHIPS_STRING, "name", shipsNameSearchBox.Text);
@@ -300,6 +290,17 @@ namespace ShipsDB
         {
             connectToolStripMenuItem_Click(sender, e);
         }
+
+        private void boreSearchButton_Click(object sender, EventArgs e)
+        {
+            search("Classes", "bore", boreSearchBox.Text);
+        }
+
+        private void displacementSearchButton_Click(object sender, EventArgs e)
+        {
+            search("Classes", "displacement", displacementSearchBox.Text);
+        }
+
     }
     /// <summary>
     /// Configuration file for the PostgreSQL database connection 
@@ -320,10 +321,11 @@ namespace ShipsDB
         // This function will setup the connection to PostgreSQL database and return
         // the connection data. This connection data will be used to query the Postgres
         // database
-        public static NpgsqlConnection GetConn(String user, String password)
+        public static NpgsqlConnection GetConn(String user, String password, String host)
         {
             Password = password;
             UserId = user;
+            Host = host;
             return new NpgsqlConnection("Server=" + Config.Host +
                                                         ";Port=" + Config.Port +
                                                         ";UserId=" + Config.UserId +

@@ -26,6 +26,8 @@ namespace ShipsDB
             get { return password; }
             set { password = value; }
         }
+        String url {get; set;} 
+
         Form1 caller;
 
 
@@ -35,16 +37,18 @@ namespace ShipsDB
             user = "";
             password = "";
             InitializeComponent();
+
+            caller.host = urlBox.Text = "131.252.208.122";
+            userBox.Focus();
         }
 
         private void ConnectForm_Load(object sender, EventArgs e)
         {
-
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar.ToString() == "\r")
+            if (e.KeyChar.ToString() == "\r" || e.KeyChar.ToString() == "\t")
             {
                 caller.User = userBox.Text;
                 passwordBox.Focus();
@@ -53,13 +57,22 @@ namespace ShipsDB
 
         private void passwordBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar.ToString() == "\r")
+            if (e.KeyChar.ToString() == "\r" || e.KeyChar.ToString() == "\t")
             {
                 caller.User = userBox.Text;
                 caller.Password = passwordBox.Text;
                 caller.Enabled = true;
                 caller.Focus();
                 this.Close();
+            }
+        }
+
+        private void urlBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar.ToString() == "\r" || e.KeyChar.ToString() == "\t")
+            {
+                caller.host = urlBox.Text;
+                userBox.Focus();
             }
         }
     }

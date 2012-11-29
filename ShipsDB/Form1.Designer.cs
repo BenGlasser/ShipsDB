@@ -224,7 +224,7 @@
             this.showClassesButton.Location = new System.Drawing.Point(146, 244);
             this.showClassesButton.Name = "showClassesButton";
             this.showClassesButton.Size = new System.Drawing.Size(131, 23);
-            this.showClassesButton.TabIndex = 37;
+            this.showClassesButton.TabIndex = 26;
             this.showClassesButton.Text = "Show";
             this.showClassesButton.UseVisualStyleBackColor = true;
             this.showClassesButton.Click += new System.EventHandler(this.showClassesButton_Click);
@@ -234,18 +234,20 @@
             this.displacementSearchButton.Location = new System.Drawing.Point(356, 212);
             this.displacementSearchButton.Name = "displacementSearchButton";
             this.displacementSearchButton.Size = new System.Drawing.Size(61, 23);
-            this.displacementSearchButton.TabIndex = 36;
+            this.displacementSearchButton.TabIndex = 25;
             this.displacementSearchButton.Text = "Search";
             this.displacementSearchButton.UseVisualStyleBackColor = true;
+            this.displacementSearchButton.Click += new System.EventHandler(this.displacementSearchButton_Click);
             // 
             // boreSearchButton
             // 
             this.boreSearchButton.Location = new System.Drawing.Point(286, 212);
             this.boreSearchButton.Name = "boreSearchButton";
             this.boreSearchButton.Size = new System.Drawing.Size(61, 23);
-            this.boreSearchButton.TabIndex = 35;
+            this.boreSearchButton.TabIndex = 23;
             this.boreSearchButton.Text = "Search";
             this.boreSearchButton.UseVisualStyleBackColor = true;
+            this.boreSearchButton.Click += new System.EventHandler(this.boreSearchButton_Click);
             // 
             // classOutLabel
             // 
@@ -260,7 +262,7 @@
             this.numGunsSearchButton.Location = new System.Drawing.Point(216, 212);
             this.numGunsSearchButton.Name = "numGunsSearchButton";
             this.numGunsSearchButton.Size = new System.Drawing.Size(61, 23);
-            this.numGunsSearchButton.TabIndex = 34;
+            this.numGunsSearchButton.TabIndex = 21;
             this.numGunsSearchButton.Text = "Search";
             this.numGunsSearchButton.UseVisualStyleBackColor = true;
             this.numGunsSearchButton.Click += new System.EventHandler(this.numGunsSearchButton_Click);
@@ -270,7 +272,7 @@
             this.insertClassesButton.Location = new System.Drawing.Point(7, 111);
             this.insertClassesButton.Name = "insertClassesButton";
             this.insertClassesButton.Size = new System.Drawing.Size(411, 23);
-            this.insertClassesButton.TabIndex = 15;
+            this.insertClassesButton.TabIndex = 14;
             this.insertClassesButton.Text = "Insert Rows";
             this.insertClassesButton.UseVisualStyleBackColor = true;
             this.insertClassesButton.Click += new System.EventHandler(this.insertClassesButton_Click);
@@ -280,7 +282,7 @@
             this.countrySearchButton.Location = new System.Drawing.Point(146, 212);
             this.countrySearchButton.Name = "countrySearchButton";
             this.countrySearchButton.Size = new System.Drawing.Size(61, 23);
-            this.countrySearchButton.TabIndex = 33;
+            this.countrySearchButton.TabIndex = 19;
             this.countrySearchButton.Text = "Search";
             this.countrySearchButton.UseVisualStyleBackColor = true;
             this.countrySearchButton.Click += new System.EventHandler(this.countrySearchButton_Click);
@@ -299,7 +301,7 @@
             this.typeSearchButton.Location = new System.Drawing.Point(76, 212);
             this.typeSearchButton.Name = "typeSearchButton";
             this.typeSearchButton.Size = new System.Drawing.Size(61, 23);
-            this.typeSearchButton.TabIndex = 32;
+            this.typeSearchButton.TabIndex = 17;
             this.typeSearchButton.Text = "Search";
             this.typeSearchButton.UseVisualStyleBackColor = true;
             this.typeSearchButton.Click += new System.EventHandler(this.typeSearchButton_Click);
@@ -318,7 +320,7 @@
             this.classSearchButton.Location = new System.Drawing.Point(6, 212);
             this.classSearchButton.Name = "classSearchButton";
             this.classSearchButton.Size = new System.Drawing.Size(61, 23);
-            this.classSearchButton.TabIndex = 31;
+            this.classSearchButton.TabIndex = 15;
             this.classSearchButton.Text = "Search";
             this.classSearchButton.UseVisualStyleBackColor = true;
             this.classSearchButton.Click += new System.EventHandler(this.classSearchButton_Click);
@@ -356,7 +358,6 @@
             this.displacementSearchBox.Name = "displacementSearchBox";
             this.displacementSearchBox.Size = new System.Drawing.Size(61, 20);
             this.displacementSearchBox.TabIndex = 24;
-            this.displacementSearchBox.TextChanged += new System.EventHandler(this.displacementSearchBox_TextChanged);
             // 
             // typeLable
             // 
@@ -390,8 +391,7 @@
             this.boreSearchBox.Location = new System.Drawing.Point(286, 188);
             this.boreSearchBox.Name = "boreSearchBox";
             this.boreSearchBox.Size = new System.Drawing.Size(61, 20);
-            this.boreSearchBox.TabIndex = 23;
-            this.boreSearchBox.TextChanged += new System.EventHandler(this.boreSearchBox_TextChanged);
+            this.boreSearchBox.TabIndex = 22;
             // 
             // displacementField2
             // 
@@ -421,7 +421,7 @@
             this.typeSearchBox.Location = new System.Drawing.Point(76, 188);
             this.typeSearchBox.Name = "typeSearchBox";
             this.typeSearchBox.Size = new System.Drawing.Size(61, 20);
-            this.typeSearchBox.TabIndex = 20;
+            this.typeSearchBox.TabIndex = 16;
             // 
             // countryField1
             // 
@@ -451,7 +451,7 @@
             this.numGunsSearchBox.Location = new System.Drawing.Point(216, 188);
             this.numGunsSearchBox.Name = "numGunsSearchBox";
             this.numGunsSearchBox.Size = new System.Drawing.Size(61, 20);
-            this.numGunsSearchBox.TabIndex = 22;
+            this.numGunsSearchBox.TabIndex = 20;
             // 
             // countryField2
             // 
@@ -481,7 +481,7 @@
             this.classSearchBox.Location = new System.Drawing.Point(6, 188);
             this.classSearchBox.Name = "classSearchBox";
             this.classSearchBox.Size = new System.Drawing.Size(61, 20);
-            this.classSearchBox.TabIndex = 19;
+            this.classSearchBox.TabIndex = 14;
             // 
             // numGunsField1
             // 
@@ -511,7 +511,7 @@
             this.countrySearchBox.Location = new System.Drawing.Point(146, 188);
             this.countrySearchBox.Name = "countrySearchBox";
             this.countrySearchBox.Size = new System.Drawing.Size(61, 20);
-            this.countrySearchBox.TabIndex = 21;
+            this.countrySearchBox.TabIndex = 18;
             // 
             // numGunsField2
             // 
@@ -587,7 +587,7 @@
             this.showShipsButton.Location = new System.Drawing.Point(146, 245);
             this.showShipsButton.Name = "showShipsButton";
             this.showShipsButton.Size = new System.Drawing.Size(131, 23);
-            this.showShipsButton.TabIndex = 41;
+            this.showShipsButton.TabIndex = 18;
             this.showShipsButton.Text = "Show";
             this.showShipsButton.UseVisualStyleBackColor = true;
             this.showShipsButton.Click += new System.EventHandler(this.showShipsButton_Click);
@@ -615,7 +615,7 @@
             this.insertShipsButton.Location = new System.Drawing.Point(111, 111);
             this.insertShipsButton.Name = "insertShipsButton";
             this.insertShipsButton.Size = new System.Drawing.Size(202, 23);
-            this.insertShipsButton.TabIndex = 20;
+            this.insertShipsButton.TabIndex = 7;
             this.insertShipsButton.Text = "Insert";
             this.insertShipsButton.UseVisualStyleBackColor = true;
             this.insertShipsButton.Click += new System.EventHandler(this.shipsInsertButton_Click);
@@ -643,7 +643,7 @@
             this.shipsLaunchedSearchButton.Location = new System.Drawing.Point(252, 203);
             this.shipsLaunchedSearchButton.Name = "shipsLaunchedSearchButton";
             this.shipsLaunchedSearchButton.Size = new System.Drawing.Size(61, 23);
-            this.shipsLaunchedSearchButton.TabIndex = 33;
+            this.shipsLaunchedSearchButton.TabIndex = 17;
             this.shipsLaunchedSearchButton.Text = "Search";
             this.shipsLaunchedSearchButton.UseVisualStyleBackColor = true;
             this.shipsLaunchedSearchButton.Click += new System.EventHandler(this.shipsLaunchedSearchButton_Click);
@@ -653,7 +653,7 @@
             this.shipsClassSearchButton.Location = new System.Drawing.Point(182, 203);
             this.shipsClassSearchButton.Name = "shipsClassSearchButton";
             this.shipsClassSearchButton.Size = new System.Drawing.Size(61, 23);
-            this.shipsClassSearchButton.TabIndex = 32;
+            this.shipsClassSearchButton.TabIndex = 15;
             this.shipsClassSearchButton.Text = "Search";
             this.shipsClassSearchButton.UseVisualStyleBackColor = true;
             this.shipsClassSearchButton.Click += new System.EventHandler(this.shipsClassSearchButton_Click);
@@ -672,7 +672,7 @@
             this.shipsNameSearchButton.Location = new System.Drawing.Point(112, 203);
             this.shipsNameSearchButton.Name = "shipsNameSearchButton";
             this.shipsNameSearchButton.Size = new System.Drawing.Size(61, 23);
-            this.shipsNameSearchButton.TabIndex = 31;
+            this.shipsNameSearchButton.TabIndex = 13;
             this.shipsNameSearchButton.Text = "Search";
             this.shipsNameSearchButton.UseVisualStyleBackColor = true;
             this.shipsNameSearchButton.Click += new System.EventHandler(this.shipsNameSearchButton_Click);
@@ -691,7 +691,7 @@
             this.shipsClassSearchBox.Location = new System.Drawing.Point(182, 179);
             this.shipsClassSearchBox.Name = "shipsClassSearchBox";
             this.shipsClassSearchBox.Size = new System.Drawing.Size(61, 20);
-            this.shipsClassSearchBox.TabIndex = 20;
+            this.shipsClassSearchBox.TabIndex = 14;
             // 
             // label11
             // 
@@ -707,7 +707,7 @@
             this.shipsNameSearchBox.Location = new System.Drawing.Point(112, 179);
             this.shipsNameSearchBox.Name = "shipsNameSearchBox";
             this.shipsNameSearchBox.Size = new System.Drawing.Size(61, 20);
-            this.shipsNameSearchBox.TabIndex = 19;
+            this.shipsNameSearchBox.TabIndex = 8;
             // 
             // label12
             // 
@@ -723,49 +723,49 @@
             this.shipsLaunchedSearchBox.Location = new System.Drawing.Point(252, 179);
             this.shipsLaunchedSearchBox.Name = "shipsLaunchedSearchBox";
             this.shipsLaunchedSearchBox.Size = new System.Drawing.Size(61, 20);
-            this.shipsLaunchedSearchBox.TabIndex = 21;
+            this.shipsLaunchedSearchBox.TabIndex = 16;
             // 
             // shipsNameBox2
             // 
             this.shipsNameBox2.Location = new System.Drawing.Point(112, 84);
             this.shipsNameBox2.Name = "shipsNameBox2";
             this.shipsNameBox2.Size = new System.Drawing.Size(61, 20);
-            this.shipsNameBox2.TabIndex = 11;
+            this.shipsNameBox2.TabIndex = 4;
             // 
             // shipsLaunchedBox1
             // 
             this.shipsLaunchedBox1.Location = new System.Drawing.Point(252, 57);
             this.shipsLaunchedBox1.Name = "shipsLaunchedBox1";
             this.shipsLaunchedBox1.Size = new System.Drawing.Size(61, 20);
-            this.shipsLaunchedBox1.TabIndex = 0;
+            this.shipsLaunchedBox1.TabIndex = 3;
             // 
             // shipsNameBox1
             // 
             this.shipsNameBox1.Location = new System.Drawing.Point(112, 57);
             this.shipsNameBox1.Name = "shipsNameBox1";
             this.shipsNameBox1.Size = new System.Drawing.Size(61, 20);
-            this.shipsNameBox1.TabIndex = 10;
+            this.shipsNameBox1.TabIndex = 1;
             // 
             // shipsLaunchedBox2
             // 
             this.shipsLaunchedBox2.Location = new System.Drawing.Point(252, 84);
             this.shipsLaunchedBox2.Name = "shipsLaunchedBox2";
             this.shipsLaunchedBox2.Size = new System.Drawing.Size(61, 20);
-            this.shipsLaunchedBox2.TabIndex = 1;
+            this.shipsLaunchedBox2.TabIndex = 6;
             // 
             // shipsClassBox2
             // 
             this.shipsClassBox2.Location = new System.Drawing.Point(182, 84);
             this.shipsClassBox2.Name = "shipsClassBox2";
             this.shipsClassBox2.Size = new System.Drawing.Size(61, 20);
-            this.shipsClassBox2.TabIndex = 9;
+            this.shipsClassBox2.TabIndex = 5;
             // 
             // shipsClassBox1
             // 
             this.shipsClassBox1.Location = new System.Drawing.Point(182, 57);
             this.shipsClassBox1.Name = "shipsClassBox1";
             this.shipsClassBox1.Size = new System.Drawing.Size(61, 20);
-            this.shipsClassBox1.TabIndex = 8;
+            this.shipsClassBox1.TabIndex = 2;
             // 
             // battleTab
             // 
@@ -804,7 +804,7 @@
             this.showBattlesButton.Location = new System.Drawing.Point(146, 245);
             this.showBattlesButton.Name = "showBattlesButton";
             this.showBattlesButton.Size = new System.Drawing.Size(131, 23);
-            this.showBattlesButton.TabIndex = 38;
+            this.showBattlesButton.TabIndex = 10;
             this.showBattlesButton.Text = "Show";
             this.showBattlesButton.UseVisualStyleBackColor = true;
             this.showBattlesButton.Click += new System.EventHandler(this.showBattlesButton_Click);
@@ -814,7 +814,7 @@
             this.searchBattleDatebutton.Location = new System.Drawing.Point(213, 209);
             this.searchBattleDatebutton.Name = "searchBattleDatebutton";
             this.searchBattleDatebutton.Size = new System.Drawing.Size(61, 23);
-            this.searchBattleDatebutton.TabIndex = 22;
+            this.searchBattleDatebutton.TabIndex = 9;
             this.searchBattleDatebutton.Text = "Search";
             this.searchBattleDatebutton.UseVisualStyleBackColor = true;
             this.searchBattleDatebutton.Click += new System.EventHandler(this.searchBattleDatebutton_Click);
@@ -824,7 +824,7 @@
             this.searchBattlesNameButton.Location = new System.Drawing.Point(143, 209);
             this.searchBattlesNameButton.Name = "searchBattlesNameButton";
             this.searchBattlesNameButton.Size = new System.Drawing.Size(61, 23);
-            this.searchBattlesNameButton.TabIndex = 21;
+            this.searchBattlesNameButton.TabIndex = 7;
             this.searchBattlesNameButton.Text = "Search";
             this.searchBattlesNameButton.UseVisualStyleBackColor = true;
             this.searchBattlesNameButton.Click += new System.EventHandler(this.searchBattlesNameButton_Click);
@@ -834,7 +834,7 @@
             this.insertBattlesButton.Location = new System.Drawing.Point(143, 97);
             this.insertBattlesButton.Name = "insertBattlesButton";
             this.insertBattlesButton.Size = new System.Drawing.Size(131, 23);
-            this.insertBattlesButton.TabIndex = 20;
+            this.insertBattlesButton.TabIndex = 5;
             this.insertBattlesButton.Text = "Insert";
             this.insertBattlesButton.UseVisualStyleBackColor = true;
             this.insertBattlesButton.Click += new System.EventHandler(this.insertBattlesButton_Click);
@@ -880,42 +880,42 @@
             this.battlesNameBox2.Location = new System.Drawing.Point(143, 70);
             this.battlesNameBox2.Name = "battlesNameBox2";
             this.battlesNameBox2.Size = new System.Drawing.Size(61, 20);
-            this.battlesNameBox2.TabIndex = 11;
+            this.battlesNameBox2.TabIndex = 3;
             // 
             // battlesNameBox1
             // 
             this.battlesNameBox1.Location = new System.Drawing.Point(143, 43);
             this.battlesNameBox1.Name = "battlesNameBox1";
             this.battlesNameBox1.Size = new System.Drawing.Size(61, 20);
-            this.battlesNameBox1.TabIndex = 10;
+            this.battlesNameBox1.TabIndex = 1;
             // 
             // battlesDateBox2
             // 
             this.battlesDateBox2.Location = new System.Drawing.Point(213, 70);
             this.battlesDateBox2.Name = "battlesDateBox2";
             this.battlesDateBox2.Size = new System.Drawing.Size(61, 20);
-            this.battlesDateBox2.TabIndex = 9;
+            this.battlesDateBox2.TabIndex = 4;
             // 
             // battlesDateBox1
             // 
             this.battlesDateBox1.Location = new System.Drawing.Point(213, 43);
             this.battlesDateBox1.Name = "battlesDateBox1";
             this.battlesDateBox1.Size = new System.Drawing.Size(61, 20);
-            this.battlesDateBox1.TabIndex = 8;
+            this.battlesDateBox1.TabIndex = 2;
             // 
             // searchBattlesNameBox
             // 
             this.searchBattlesNameBox.Location = new System.Drawing.Point(143, 182);
             this.searchBattlesNameBox.Name = "searchBattlesNameBox";
             this.searchBattlesNameBox.Size = new System.Drawing.Size(61, 20);
-            this.searchBattlesNameBox.TabIndex = 4;
+            this.searchBattlesNameBox.TabIndex = 6;
             // 
             // searchBattlesDateBox
             // 
             this.searchBattlesDateBox.Location = new System.Drawing.Point(213, 182);
             this.searchBattlesDateBox.Name = "searchBattlesDateBox";
             this.searchBattlesDateBox.Size = new System.Drawing.Size(61, 20);
-            this.searchBattlesDateBox.TabIndex = 6;
+            this.searchBattlesDateBox.TabIndex = 8;
             // 
             // outcomeTab
             // 
@@ -960,7 +960,7 @@
             this.showOutcomesButton.Location = new System.Drawing.Point(146, 245);
             this.showOutcomesButton.Name = "showOutcomesButton";
             this.showOutcomesButton.Size = new System.Drawing.Size(131, 23);
-            this.showOutcomesButton.TabIndex = 60;
+            this.showOutcomesButton.TabIndex = 14;
             this.showOutcomesButton.Text = "Show";
             this.showOutcomesButton.UseVisualStyleBackColor = true;
             this.showOutcomesButton.Click += new System.EventHandler(this.showOutcomesButton_Click);
@@ -988,7 +988,7 @@
             this.insertOutcomesButton.Location = new System.Drawing.Point(112, 112);
             this.insertOutcomesButton.Name = "insertOutcomesButton";
             this.insertOutcomesButton.Size = new System.Drawing.Size(202, 23);
-            this.insertOutcomesButton.TabIndex = 52;
+            this.insertOutcomesButton.TabIndex = 7;
             this.insertOutcomesButton.Text = "Insert";
             this.insertOutcomesButton.UseVisualStyleBackColor = true;
             this.insertOutcomesButton.Click += new System.EventHandler(this.insertOutcomesButton_Click);
@@ -1007,7 +1007,7 @@
             this.searchResultBattleButton.Location = new System.Drawing.Point(253, 204);
             this.searchResultBattleButton.Name = "searchResultBattleButton";
             this.searchResultBattleButton.Size = new System.Drawing.Size(61, 23);
-            this.searchResultBattleButton.TabIndex = 56;
+            this.searchResultBattleButton.TabIndex = 13;
             this.searchResultBattleButton.Text = "Search";
             this.searchResultBattleButton.UseVisualStyleBackColor = true;
             this.searchResultBattleButton.Click += new System.EventHandler(this.searchResultBattleButton_Click);
@@ -1017,7 +1017,7 @@
             this.searchOutcomesBattleButton.Location = new System.Drawing.Point(183, 204);
             this.searchOutcomesBattleButton.Name = "searchOutcomesBattleButton";
             this.searchOutcomesBattleButton.Size = new System.Drawing.Size(61, 23);
-            this.searchOutcomesBattleButton.TabIndex = 55;
+            this.searchOutcomesBattleButton.TabIndex = 11;
             this.searchOutcomesBattleButton.Text = "Search";
             this.searchOutcomesBattleButton.UseVisualStyleBackColor = true;
             this.searchOutcomesBattleButton.Click += new System.EventHandler(this.searchOutcomesBattleButton_Click);
@@ -1027,7 +1027,7 @@
             this.searchOutcomesShiptButton.Location = new System.Drawing.Point(113, 204);
             this.searchOutcomesShiptButton.Name = "searchOutcomesShiptButton";
             this.searchOutcomesShiptButton.Size = new System.Drawing.Size(61, 23);
-            this.searchOutcomesShiptButton.TabIndex = 54;
+            this.searchOutcomesShiptButton.TabIndex = 9;
             this.searchOutcomesShiptButton.Text = "Search";
             this.searchOutcomesShiptButton.UseVisualStyleBackColor = true;
             this.searchOutcomesShiptButton.Click += new System.EventHandler(this.searchOutcomesShiptButton_Click);
@@ -1046,7 +1046,7 @@
             this.searchOutcomesBattleBox.Location = new System.Drawing.Point(183, 180);
             this.searchOutcomesBattleBox.Name = "searchOutcomesBattleBox";
             this.searchOutcomesBattleBox.Size = new System.Drawing.Size(61, 20);
-            this.searchOutcomesBattleBox.TabIndex = 51;
+            this.searchOutcomesBattleBox.TabIndex = 10;
             // 
             // label21
             // 
@@ -1062,7 +1062,7 @@
             this.searchOutcomesShiptBox.Location = new System.Drawing.Point(113, 180);
             this.searchOutcomesShiptBox.Name = "searchOutcomesShiptBox";
             this.searchOutcomesShiptBox.Size = new System.Drawing.Size(61, 20);
-            this.searchOutcomesShiptBox.TabIndex = 50;
+            this.searchOutcomesShiptBox.TabIndex = 8;
             // 
             // label22
             // 
@@ -1078,49 +1078,49 @@
             this.searchOutcomesResultBox.Location = new System.Drawing.Point(253, 180);
             this.searchOutcomesResultBox.Name = "searchOutcomesResultBox";
             this.searchOutcomesResultBox.Size = new System.Drawing.Size(61, 20);
-            this.searchOutcomesResultBox.TabIndex = 53;
+            this.searchOutcomesResultBox.TabIndex = 12;
             // 
             // outcomesShipBox2
             // 
             this.outcomesShipBox2.Location = new System.Drawing.Point(113, 85);
             this.outcomesShipBox2.Name = "outcomesShipBox2";
             this.outcomesShipBox2.Size = new System.Drawing.Size(61, 20);
-            this.outcomesShipBox2.TabIndex = 46;
+            this.outcomesShipBox2.TabIndex = 4;
             // 
             // outcomesResultBox1
             // 
             this.outcomesResultBox1.Location = new System.Drawing.Point(253, 58);
             this.outcomesResultBox1.Name = "outcomesResultBox1";
             this.outcomesResultBox1.Size = new System.Drawing.Size(61, 20);
-            this.outcomesResultBox1.TabIndex = 41;
+            this.outcomesResultBox1.TabIndex = 3;
             // 
             // outcomesShipBox1
             // 
             this.outcomesShipBox1.Location = new System.Drawing.Point(113, 58);
             this.outcomesShipBox1.Name = "outcomesShipBox1";
             this.outcomesShipBox1.Size = new System.Drawing.Size(61, 20);
-            this.outcomesShipBox1.TabIndex = 45;
+            this.outcomesShipBox1.TabIndex = 1;
             // 
             // outcomesResultBox2
             // 
             this.outcomesResultBox2.Location = new System.Drawing.Point(253, 85);
             this.outcomesResultBox2.Name = "outcomesResultBox2";
             this.outcomesResultBox2.Size = new System.Drawing.Size(61, 20);
-            this.outcomesResultBox2.TabIndex = 42;
+            this.outcomesResultBox2.TabIndex = 6;
             // 
             // outcomesBattleBox2
             // 
             this.outcomesBattleBox2.Location = new System.Drawing.Point(183, 85);
             this.outcomesBattleBox2.Name = "outcomesBattleBox2";
             this.outcomesBattleBox2.Size = new System.Drawing.Size(61, 20);
-            this.outcomesBattleBox2.TabIndex = 44;
+            this.outcomesBattleBox2.TabIndex = 5;
             // 
             // outcomesBattleBox1
             // 
             this.outcomesBattleBox1.Location = new System.Drawing.Point(183, 58);
             this.outcomesBattleBox1.Name = "outcomesBattleBox1";
             this.outcomesBattleBox1.Size = new System.Drawing.Size(61, 20);
-            this.outcomesBattleBox1.TabIndex = 43;
+            this.outcomesBattleBox1.TabIndex = 2;
             // 
             // classesDataGrid
             // 

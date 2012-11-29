@@ -15,3 +15,7 @@ H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\bin\Debug\fi\Npgsql.resources.dll
 H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\bin\Debug\fr\Npgsql.resources.dll
 H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\bin\Debug\ja\Npgsql.resources.dll
 H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\bin\Debug\zh-CN\Npgsql.resources.dll
+H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\bin\Debug\ShipsDB.exe.manifest
+H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\bin\Debug\ShipsDB.application
+H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\obj\x86\Debug\ShipsDB.exe.manifest
+H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\obj\x86\Debug\ShipsDB.application

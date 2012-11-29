@@ -19,3 +19,4 @@ H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\bin\Debug\ShipsDB.exe.manifest
 H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\bin\Debug\ShipsDB.application
 H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\obj\x86\Debug\ShipsDB.exe.manifest
 H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\obj\x86\Debug\ShipsDB.application
+H:\Visual Studio 2010\Projects\ShipsDB\ShipsDB\obj\x86\Debug\ShipsDB.TrustInfo.xml
